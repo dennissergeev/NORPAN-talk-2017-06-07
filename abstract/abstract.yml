@@ -1,0 +1,26 @@
+---
+title: Polar lows and how background environment can influence their development
+authors:
+    - name: Denis Sergeev
+      aff: a
+      email: "d.sergeev@uea.ac.uk"
+    - name: Ian Renfrew
+      aff: a
+    - name: Thomas Spengler
+      aff: b
+    - name: Stephen Dorling
+      aff: c
+affiliations:
+    - ref: a
+      name: School of Environmental Sciences, University of East Anglia, Norwich, UK
+    - ref: b
+      name: Geophysical Institute, University of Bergen and Bjerknes Centre for Climate Research, Bergen, Norway
+    - ref: c
+      name: Weatherquest Ltd., School of Environmental Sciences, University of East Anglia, Norwich, UK
+
+# Settings
+mainfont: Linux Libertine O 
+fontsize: 11pt
+lang: English
+geometry: a4paper, left=50mm, right=35mm, top=21mm, bottom=17mm
+---
