@@ -9,6 +9,12 @@
 % \usepackage{xspace}
 % \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
+%%% MATHS
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{siunitx}
+\sisetup{range-units=single, range-phrase=--}
+\usepackage{cool}
+
 %%% FONTS
 \usepackage[normalem]{ulem}
 
@@ -20,6 +26,10 @@
 
 %%% MISC
 \usepackage{datetime}
+
+%%% TABLES
+\usepackage{booktabs}
+\usepackage{tabularx}
 
 %%% THEME SETTINGS
 \setbeamertemplate{frame footer}{\tiny{NORPAN workshop 2017}}
@@ -43,6 +53,13 @@ pdfmoddate= {D:\pdfdate},
 pdfcreator = {}
 }
 
+% \usepackage[left=2cm,
+%             right=2cm,
+%             top=2cm,
+%             bottom=2cm,
+%             headheight=1cm
+%            ]{geometry}
+
 \begin{document}
 
 \maketitle
@@ -53,7 +70,7 @@ pdfcreator = {}
 % \end{frame}
 
 \section{Introduction}
-\begin{frame}{\sout{Magical beasts} Polar lows and where to find them}
+\begin{frame}{\sout{Fantastic beasts} Polar lows and where to find them}
 
 \end{frame}
 
@@ -71,12 +88,37 @@ Sea ice
 \begin{frame}{Motivation}
 \begin{itemize}
 \item
-Scarcely any research focused on the Svalbard as a trigger mechanism for polar lows
+Hardly any research focused on the Svalbard as a trigger mechanism for polar lows
 \item
-Sea ice distribution is crucial in generation of the convergence zone, and organising it into a cyclonic system
+Sea ice configuration is crucial for convergence zone and its evolution into a cyclone
 \item
 Will location and impact of polar lows change with different sea conditions in the warming climate?
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Model set-up (nested domain)}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+{\small
+\begin{center}
+\begin{tabularx}{\textwidth}{ll}
+\toprule
+Version & 10.2 \\
+Horizontal grid spacing & \SI{2.2}{\kilo\meter}\\
+Number of grid points & $600\times 700$\\
+Nested domain area & \SI{1320}{\kilo\meter}$\times$ \SI{1540}{\kilo\meter}\\
+Nested domain centre & \ang{76}N \ang{10}E \\
+Run duration & \SI{48}{\hour}\\
+Output frequency & \SI{1}{\hour}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+Sea ice
+\end{column}
+\end{columns}
 \end{frame}
 
 
