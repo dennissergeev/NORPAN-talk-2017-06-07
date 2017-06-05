@@ -76,16 +76,32 @@ pdfcreator = {}
 
 \section{Introduction}
 \begin{frame}{\sout{Fantastic beasts} Polar lows and where to find them}
+\begin{itemize}
+\item \textit{Polar lows} are small (\SIrange{100}{500}{\km} in diameter), short-lived maritime depressions with near-surface winds exceeding \SI{15}{\meter\per\s}
+\item They develop in the regions prone to CAOs, where relatively cold continental air is advected over warm ice-free waters
+\item Dozens of polar lows per season
+\end{itemize}
+\end{frame}
 
+\begin{frame}{A polar low near Lofoten Islands}
+\begin{center}
+\includegraphics[width=\textwidth]{{figures/PL_19122014_Lofoten}.jpg}
+\end{center}
 \end{frame}
 
 \begin{frame}{Surface conditions}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-Orography
+Hypothesis 1:\\
+Svalbard's orography deflects the northerly flow\\
+$$\Downarrow$$
+Let's remove Svalbard!
 \end{column}
 \begin{column}{0.5\textwidth}
-Sea ice
+Hypothesis 2:\\
+Several studies indicate that sea ice extent plays a significant role\\
+$$\Downarrow$$
+Let's change the sea ice edge!
 \end{column}
 \end{columns}
 \end{frame}
@@ -99,6 +115,17 @@ Sea ice configuration is crucial for convergence zone and its evolution into a c
 \item
 Will location and impact of polar lows change with different sea conditions in the warming climate?
 \end{itemize}
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\includegraphics[width=\textwidth]{{figures/pl_japansea}.jpg}
+\end{column}
+\begin{column}{0.3\textwidth}
+\includegraphics[width=\textwidth]{{figures/polarlow_barentssea}.jpg}
+\end{column}
+\begin{column}{0.3\textwidth}
+\includegraphics[width=\textwidth]{{figures/polarlow_metno}.jpg}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section{Data and methods}
@@ -251,6 +278,7 @@ AVHRR IR image of polar low event at one selected time
 \end{frame}
 
 \begin{frame}{STARS-77 polar low}
+\begin{center}
 {\small Pseudo-satellite (TOA OLR) images with SLP contours and precipitation}
 \par
 \includegraphics[width=0.7\textwidth]{{figures/lwtoa_slp_precip_cf_20080129T1200Z_km2p2_ctrl_nosva_ice82n_nosva_ice82n_surf_200801311200}.png}
@@ -260,7 +288,11 @@ AVHRR IR image of polar low event at one selected time
 \section{Conclusion}
 \begin{frame}{Conclusion}
 \begin{itemize}
-\item Real polar low cases are a mess and hard to analyse
+\item A suite of sensitivity simulations of a real polar low was aimed to understand the role of orography and sea ice
+\item The generation of the polar low is resilient and is probably determined by synoptic-scale flow
+\item The exact location and shape is influenced by surface factors
+\item Incipient vorticity bands appear in Svalbard fjords and are sensitive to orography
+\item In other cases, the polar low is only slightly weaker (e.g. STARS-77)
 \end{itemize}
 \end{frame}
 
