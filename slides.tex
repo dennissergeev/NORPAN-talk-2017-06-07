@@ -24,6 +24,11 @@
 \newcommand{\twittersymbol} {\faTwitter~~}
 \newcommand{\githubsymbol}  {\faGithub~~}
 
+%%% COLOURS
+\usepackage{xcolor}
+\definecolor{C0}{HTML}{1F77B4}
+\definecolor{C1}{HTML}{FF7F0E}
+
 %%% MISC
 \usepackage{datetime}
 
@@ -132,12 +137,10 @@ Output frequency & \SI{1}{\hour}\\
 \end{frame}
 
 \begin{frame}{Polar low cases: control run}
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\linewidth]{{figures/lwtoa_seaice_snowrate_slp_max_ke_ctrl}.pdf}
-\caption{Simulated TOA OLR (\si{\watt\per\square\meter} with overlaid MSLP (red contours, \si{\hecto\pascal}) and precipitation contours (\si{\kg\per\meter\squared\per\s}) for 9 PL cases. The sea-ice edge is shown as 15\% contour line of sea ice fraction (orange line).}
-\label{fig:lwtoa_slp_precip}
-\end{figure}
+\begin{center}
+TOA OLR (cloud pattern); SLP contours; precipitation rate\\
+\includegraphics[width=0.8\linewidth]{{figures/lwtoa_seaice_snowrate_slp_max_ke_ctrl}.png}
+\end{center}
 \end{frame}
 
 \begin{frame}{ACCACIA polar low}
@@ -159,19 +162,39 @@ Output frequency & \SI{1}{\hour}\\
 \end{frame}
 
 \begin{frame}{ACCACIA polar low}
+\begin{center}
 More info in this paper [Sergeev et al., 2017]:\\
 \includegraphics[width=\textwidth]{{figures/paper}.png}\\
 \small Don't be shy to cite!
+\end{center}
 \end{frame}
 
 \begin{frame}{Sensitivity experiments}
-Sea ice and orography configuration
+\begin{center}
+SST, sea ice, and orography configuration
 \par
-\includegraphics[width=0.8\textwidth]{{figures/surftemp_orog_seaice}.png}\\
+\includegraphics[width=0.7\textwidth]{{figures/surftemp_orog_seaice}.png}
+\end{center}
 \end{frame}
 
 \section{Results}
-\begin{frame}{Overview}
+\begin{frame}{Polar low tracks}
+\begin{center}
+Manually tracked polar low paths in the \textcolor{C0}{control} and \textcolor{C1}{perturbed} runs\par
+\includegraphics[width=0.7\textwidth]{{figures/all_pl_tracks_ctrl_sic81n_nosva}.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Structure overview}
+\begin{center}
+Cyclonic vorticity at \SI{950}{hPa} above the threshold of \SI{e-3}{\per\second} in the \textcolor{C0}{control} and \textcolor{C1}{perturbed} runs\par
+\includegraphics[width=0.7\textwidth]{{figures/all_pl_vort_ctrl_sic81n_nosva}.pdf}
+\end{center}
+\end{frame}
+
+\subsection{Focus on STARS-72 polar low case}
+\begin{frame}{STARS-72 polar low}
+
 \end{frame}
 
 
