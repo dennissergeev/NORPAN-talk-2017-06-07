@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[10pt,draft]{beamer}
 
 \usetheme[progressbar=frametitle]{metropolis}
 \usepackage{appendixnumberbeamer}
@@ -79,27 +79,25 @@ pdfcreator = {}
 \begin{itemize}
 \item \textit{Polar lows} are small (\SIrange{100}{500}{\km} in diameter), short-lived maritime depressions with near-surface winds exceeding \SI{15}{\meter\per\s}
 \item They develop in the regions prone to CAOs, where relatively cold continental air is advected over warm ice-free waters
-\item Dozens of polar lows per season
 \end{itemize}
-\end{frame}
-
-\begin{frame}{A polar low near Lofoten Islands}
 \begin{center}
-\includegraphics[width=\textwidth]{{figures/PL_19122014_Lofoten}.jpg}
+\includegraphics[width=0.7\textwidth]{{figures/PL_19122014_Lofoten}.jpg}\\
+\tiny A polar low near Lofoten Islands (\href{http://www.nrk.no/nordland/polart-lavtrykk-inn-mot-nordland-natt-til-sondag-1.12112660}{NRK.no})
 \end{center}
 \end{frame}
+
 
 \begin{frame}{Surface conditions}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-Hypothesis 1:\\
+\underline{Hypothesis 1}:\\
 Svalbard's orography deflects the northerly flow\\
 $$\Downarrow$$
-Let's remove Svalbard!
+Let's remove Svalbard!\\{\small (Replace it with sea ice)}
 \end{column}
 \begin{column}{0.5\textwidth}
-Hypothesis 2:\\
-Several studies indicate that sea ice extent plays a significant role\\
+\underline{Hypothesis 2}:\\
+Sea ice extent defines where polar lows generate\\
 $$\Downarrow$$
 Let's change the sea ice edge!
 \end{column}
@@ -117,13 +115,16 @@ Will location and impact of polar lows change with different sea conditions in t
 \end{itemize}
 \begin{columns}
 \begin{column}{0.3\textwidth}
-\includegraphics[width=\textwidth]{{figures/pl_japansea}.jpg}
+\includegraphics[width=\textwidth]{{figures/pl_japansea}.jpg}\\
+{\tiny Source: \href{http://www.atmos.rcast.u-tokyo.ac.jp/hotspot/eng/selected2/a01_k1.html}{U. Tokyo}}
 \end{column}
 \begin{column}{0.3\textwidth}
-\includegraphics[width=\textwidth]{{figures/polarlow_barentssea}.jpg}
+\includegraphics[width=\textwidth]{{figures/polarlow_barentssea}.jpg}\\
+{\tiny Source: \href{http://www.sat.dundee.ac.uk/}{NERC Satellite Receiving Station}}
 \end{column}
 \begin{column}{0.3\textwidth}
 \includegraphics[width=\textwidth]{{figures/polarlow_metno}.jpg}
+{\tiny Source: \href{https://twitter.com/Meteorologene}{MET Norway}}
 \end{column}
 \end{columns}
 \end{frame}
@@ -236,7 +237,7 @@ AVHRR IR image of polar low event at one selected time
 \end{center}
 \end{frame}
 
-\begin{frame}{STARS-72 polar low: model results}
+\begin{frame}{STARS-72 polar low: sensitivity experiments}
 \begin{center}
 Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\Huge 19 h}
 \par
@@ -244,7 +245,7 @@ Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\Huge 19 h}
 \end{center}
 \end{frame}
 
-\begin{frame}{STARS-72 polar low: model results}
+\begin{frame}{STARS-72 polar low: sensitivity experiments}
 \begin{center}
 Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\Huge 33 h}
 \par
@@ -252,7 +253,7 @@ Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\Huge 33 h}
 \end{center}
 \end{frame}
 
-\begin{frame}{STARS-72 polar low: model results}
+\begin{frame}{STARS-72 polar low: sensitivity experiments}
 \begin{center}
 Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\Huge 39 h}
 \par
@@ -260,7 +261,7 @@ Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\Huge 39 h}
 \end{center}
 \end{frame}
 
-\begin{frame}{STARS-72 polar low: model results}
+\begin{frame}{STARS-72 polar low: sensitivity experiments}
 \begin{center}
 Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\huge 39 h}
 \par
@@ -277,13 +278,29 @@ AVHRR IR image of polar low event at one selected time
 \end{center}
 \end{frame}
 
-\begin{frame}{STARS-77 polar low}
+\begin{frame}{STARS-77 polar low: sensitivity experiments}
 \begin{center}
 {\small Pseudo-satellite (TOA OLR) images with SLP contours and precipitation}
 \par
 \includegraphics[width=0.7\textwidth]{{figures/lwtoa_slp_precip_cf_20080129T1200Z_km2p2_ctrl_nosva_ice82n_nosva_ice82n_surf_200801311200}.png}
 \end{center}
 \end{frame}
+
+\begin{frame}{STARS-77 polar low: sensitivity experiments}
+\begin{center}
+Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\huge 30 h}
+\par
+\includegraphics[width=0.7\textwidth]{{figures/vort_cf_20080129T1200Z_km2p2_ctrl_nosva_ice82n_nosva_ice82n_pressure950_200801301800}.png}
+\end{center}
+\end{frame}
+\begin{frame}{STARS-77 polar low: sensitivity experiments}
+\begin{center}
+Relative vorticity (\SI{e-4}) at \SI{950}{hPa}: {\huge 48 h}
+\par
+\includegraphics[width=0.7\textwidth]{{figures/vort_cf_20080129T1200Z_km2p2_ctrl_nosva_ice82n_nosva_ice82n_pressure950_200801311200}.png}
+\end{center}
+\end{frame}
+
 
 \section{Conclusion}
 \begin{frame}{Conclusion}
